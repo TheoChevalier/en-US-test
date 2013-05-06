@@ -117,7 +117,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarksMenu.accesskey "B">
 <!ENTITY bookmarkThisPageCmd.label "Bookmark This Page">
 <!ENTITY bookmarkThisPageCmd.commandkey "d">
-<!ENTITY sharePageCmd.commandkey "l">
+<!ENTITY markPageCmd.commandkey "l">
 <!ENTITY subscribeToPageMenupopup.label "Subscribe to This Page">
 <!ENTITY subscribeToPageMenuitem.label "Subscribe to This Page…">
 <!ENTITY addCurPagesCmd.label "Bookmark All Tabs…">
@@ -151,8 +151,6 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY bookmarksItem.title          "Bookmarks">
 
 <!-- Toolbar items --> 
-<!ENTITY appMenuButton.label          "Menu">
-<!ENTITY appMenuButton.tooltip        "Open &brandShortName; menu">
 <!ENTITY homeButton.label             "Home">
 
 <!ENTITY tabGroupsButton.label        "Tab Groups">
@@ -311,17 +309,7 @@ These should match what Safari and other Apple applications use on OS X Lion. --
 <!ENTITY showAllHistoryCmd2.label "Show All History">
 <!ENTITY showAllHistoryCmd.commandkey "H">
 
-<!ENTITY appMenuEdit.label "Edit">
 <!ENTITY appMenuCustomize.label "Customize">
-<!ENTITY appMenuToolbarLayout.label "Toolbar Layout…">
-<!ENTITY appMenuSidebars.label "Sidebars">
-<!ENTITY appMenuFind.label "Find…">
-<!ENTITY appMenuUnsorted.label "Unsorted Bookmarks">
-<!ENTITY appMenuWebDeveloper.label "Web Developer">
-<!ENTITY appMenuGettingStarted.label "Getting Started">
-<!ENTITY appMenuSafeMode.label "Restart with Add-ons Disabled…">
-<!ENTITY appMenuSafeMode.accesskey "R">
-<!ENTITY appMenuBack.label "Back">
 <!ENTITY appMenuBookmarks.label "Bookmarks">
 <!ENTITY appMenuHistory.label "History">
 <!ENTITY appMenuHistoryMore.label "More…">
@@ -547,7 +535,8 @@ you can use these alternative items. Otherwise, their values should be empty.  -
 <!ENTITY quitApplicationCmd.label       "Quit"> 
 <!ENTITY quitApplicationCmd.accesskey   "Q">
 <!ENTITY quitApplicationCmdMac.label    "Quit &brandShortName;">
-<!ENTITY quitApplicationCmdMac.key      "Q">
+<!-- LOCALIZATION NOTE(quitApplicationCmdUnix.key): This keyboard shortcut is used by both Linux and OSX builds. -->
+<!ENTITY quitApplicationCmdUnix.key     "Q">
 
 <!ENTITY closeCmd.label                 "Close">  
 <!ENTITY closeCmd.key                   "W">  
@@ -661,6 +650,10 @@ just addresses the organization to follow, e.g. "This site is run by " -->
 <!ENTITY social.chatBar.commandkey "c">
 <!ENTITY social.chatBar.label "Focus chats">
 <!ENTITY social.chatBar.accesskey "c">
+
+<!-- labels are set dynamically, see browser.properties -->
+<!ENTITY social.markpage.accesskey "m">
+<!ENTITY social.marklink.accesskey "M">
 
 <!ENTITY getUserMedia.selectCamera.label "Camera to share:">
 <!ENTITY getUserMedia.selectCamera.accesskey "C">
